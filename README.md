@@ -216,3 +216,8 @@ Possible future extensions include:
 - Peirce, J. W. et al. (2019).  
   *PsychoPy2: Experiments in behavior made easy.*
 
+---
+
+# License
+
+MIT
