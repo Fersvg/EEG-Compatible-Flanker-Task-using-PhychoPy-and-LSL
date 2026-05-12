@@ -81,8 +81,8 @@ Participants receive task instructions and response mappings:
 Practice trials allow participants to become familiar with the task before the main experiment.
 
 - 4 randomized trials
+- 1 repetition per condition
 - Feedback included
-- Behavioral responses recorded
 
 ---
 
@@ -92,7 +92,7 @@ Main task used for behavioral and EEG data collection.
 
 - 60 randomized trials
 - 15 repetitions per condition
-- Congruent and incongruent conditions
+- Feedback included
 
 ---
 
