@@ -151,21 +151,29 @@ Expected neural signatures include:
 
 # Running the Experiment
 
+Follow these steps to correctly run the experiment and record synchronized EEG and behavioral data.
+
 ## 1. Start Unicorn EEG streaming
 
-- Open Unicorn Suite
-- Open LSL Interface
-- Start EEG stream
+- Open **Unicorn Suite**
+- Open the **LSL Interface**
+- Start the EEG stream
+
+> Make sure the EEG stream is visible and active before proceeding.
 
 ## 2. Open LabRecorder
 
-- Select EEG stream
-- Select PsychoPy marker stream
-- Start recording
+- Launch **LabRecorder**
+- Select:
+  
+  - EEG stream (Unicorn)
+  - PsychoPy marker stream
+
+> Do NOT start recording yet.
 
 ## 3. Run PsychoPy Experiment
 
-Open:
+Open the experiment:
 
 ```text
 psychopy/Flanker_Task_with_LSL.psyexp
@@ -173,9 +181,37 @@ psychopy/Flanker_Task_with_LSL.psyexp
 
 - Execute the experiment
 
-## 4. Save synchronized .xdf recording
+> At this point, PsychoPy should start sending LSL markers.
 
-- LabRecorder stores synchronized EEG and marker streams for offline analysis
+## 4. Start Recording
+
+Once both streams are visible in LabRecorder:
+
+- EEG stream
+- PsychoPy marker stream
+
+Click **"Start Recording"**
+
+## 5. Run the Experiment
+
+- Let the participant complete the task
+- Ensure:
+- EEG is streaming continuously
+- Markers are being sent during trials
+
+## 6. Stop and Save Recording
+
+- After the experiment:
+- Click **"Stop Recording"** in LabRecorder
+- Save the file as `.xdf`
+
+## 7. Output
+
+The `.xdf` file contains:
+
+- EEG data (Unicorn)
+- Event markers (PsychoPy)
+- Synchronized timestamps
 
 ---
 
